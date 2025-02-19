@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        body {
+            font-family: serif;
+            padding: 20px;
+        }
+        .form-container {
+            width: 400px;
+        }
+        .form-group {
+            margin-bottom: 15px;
+            display: flex;
+            align-items: center;
+        }
+        .form-group label {
+            width: 120px;
+            text-align: left;
+        }
+        .form-group input, .form-group select {
+            width: 250px;
+            padding: 5px;
+            border: 1px solid #999;
+        }
+        .form-group input[type="password"] {
+            font-family: monospace;
+        }
+        .save-button {
+            margin-left: 120px;
+            padding: 5px 20px;
+            background: linear-gradient(to bottom, #f0f0f0, #e0e0e0);
+            border: 1px solid #999;
+            border-radius: 3px;
+        }
+    </style>
+</head>
+<body>
+    <div class="form-container">
+        <form>
+            <div class="form-group">
+                <label>Full Name:</label>
+                <input type="text" value="Vincent Maverick Durano">
+            </div>
+            <div class="form-group">
+                <label>Username:</label>
+                <input type="text" value="Vinz">
+            </div>
+            <div class="form-group">
+                <label>Password:</label>
+                <input type="password" value="password">
+            </div>
+            <div class="form-group">
+                <label>Re Password:</label>
+                <input type="password" value="password">
+            </div>
+            <div class="form-group">
+                <label>Address:</label>
+                <input type="text" value="Cebu, Philippines">
+            </div>
+            <div class="form-group">
+                <label>Age:</label>
+                <input type="text" value="22">
+            </div>
+            <div class="form-group">
+                <label>Gender:</label>
+                <select>
+                    <option value="male" selected>Male</option>
+                    <option value="female">Female</option>
+                </select>
+            </div>
+            <button type="submit" class="save-button">Save</button>
+        </form>
+    </div>
+</body>
+</html>

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        .container {
+            border: 1px solid #000;
+            padding: 20px;
+            width: 600px;
+            position: relative;
+            min-height: 400px;
+        }
+        
+        h1 {
+            font-family: serif;
+            margin-top: 0;
+        }
+        
+        p {
+            font-family: serif;
+        }
+        
+        .sidenav {
+            position: absolute;
+            left: 0;
+            top: 100px;
+            width: 40px;
+        }
+        
+        .button {
+            width: 40px;
+            height: 40px;
+            margin-bottom: 10px;
+            border-radius: 0 5px 5px 0;
+            cursor: pointer;
+            transition: width 0.3s;
+        }
+        
+        .button:hover {
+            width: 60px;
+        }
+        
+        .green {
+            background-color: #4CAF50;
+        }
+        
+        .blue {
+            background-color: #2196F3;
+        }
+        
+        .red {
+            background-color: #f44336;
+        }
+        
+        .gray {
+            background-color: #555;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Hoverable Sidenav Buttons</h1>
+        <p>Hover over the buttons in the left side navigation to open them.</p>
+        
+        <div class="sidenav">
+            <div class="button green"></div>
+            <div class="button blue"></div>
+            <div class="button red"></div>
+            <div class="button gray"></div>
+        </div>
+    </div>
+</body>
+</html>

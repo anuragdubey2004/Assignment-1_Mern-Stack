@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Navigation</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        font-family: Arial, sans-serif;
+        padding: 20px;
+      }
+
+      h2 {
+        margin: 20px 0;
+        color: #333;
+      }
+
+      /* Vertical Navigation */
+      .vertical-nav {
+        width: 200px;
+        background-color: #f0f8ff;
+        border: 1px solid #ddd;
+      }
+
+      .vertical-nav .nav-header {
+        background-color: #ffa500;
+        color: white;
+        padding: 15px;
+        font-size: 18px;
+      }
+
+      .vertical-nav .nav-links a {
+        display: block;
+        padding: 12px 15px;
+        text-decoration: none;
+        color: #0000ff;
+        border-bottom: 1px solid #ddd;
+      }
+
+      .vertical-nav .nav-links a:hover {
+        background-color: #e6e6e6;
+      }
+
+      /* Horizontal Navigation */
+      .horizontal-nav {
+        margin-top: 40px;
+        margin-right: 68%;
+        display: flex;
+        background-color: #f8f9fa;
+        border: 1px solid #ddd;
+      }
+
+      .horizontal-nav a {
+        padding: 15px 25px;
+        text-decoration: none;
+        border-right: 1px solid #ddd;
+      }
+
+      .horizontal-nav a.home {
+        background-color: #808080;
+        color: white;
+      }
+
+      .horizontal-nav a.link {
+        color: #0000ff;
+      }
+
+      .horizontal-nav a:hover:not(.home) {
+        background-color: #e6e6e6;
+      }
+    </style>
+  </head>
+  <body>
+    <h2>Vertical Navigation</h2>
+    <nav class="vertical-nav">
+      <div class="nav-header">Home</div>
+      <div class="nav-links">
+        <a href="#">Java</a>
+        <a href="#">CSS</a>
+        <a href="#">HTML</a>
+        <a href="#">Bootstrap</a>
+      </div>
+    </nav>
+    <br /><br />
+
+    <h2>Horizontal Navigation</h2>
+    <nav class="horizontal-nav">
+      <a href="#" class="home">Home</a>
+      <a href="#" class="link">Java</a>
+      <a href="#" class="link">HTML</a>
+      <a href="#" class="link">CSS</a>
+    </nav>
+  </body>
+</html>
